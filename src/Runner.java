@@ -8,5 +8,8 @@ public class Runner {
         String[] test2 = {"</sup>"};
         Delimiters b = new Delimiters("<sup>","</sup>");
         b.isBalanced(b.getDelimtersList(test2));
+        String[] test3 = {"a", "b", "b"};
+        Delimiters c = new Delimiters("a", "b");
+        c.isBalanced(c.getDelimtersList(test3));
     }
 }
